@@ -11,11 +11,12 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 // The line: a phone-storage complaint answered with a confident,
-// catastrophic fix. "Your phone remembers them anyway" is the kind of
-// breezy false reassurance an AI assistant would actually produce, and
-// the gap between the helpful tone and deleting every photo is the joke.
+// catastrophic fix. The "Happy to help!" opener puts the line in a real
+// AI assistant's voice right away, so the gap between the helpful tone
+// and deleting every photo is the joke, and "your phone remembers them
+// anyway" is the breezy false reassurance that sells it.
 const LINE =
-  'Storage full? Just delete all your photos — your phone remembers them anyway.';
+  'Happy to help! Storage full? Just delete all your photos — your phone remembers them anyway.';
 
 const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
